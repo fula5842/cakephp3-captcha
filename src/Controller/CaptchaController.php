@@ -3,7 +3,7 @@
  * Controller for the use of Captcha
  * @author     Arvind K.
  * @link       http://inimisttech.com/
- * @copyright  Copyright © 2018 http://inimisttech.com/
+ * @copyright  Copyright ï¿½ 2018 http://inimisttech.com/
  * @License  MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @version 1.0 - Tested with Cakephp 3.6
  */
@@ -30,7 +30,7 @@ class CaptchaController extends AppController
     function create()	{
         $this->autoRender = false;
         $this->loadComponent('Captcha.Captcha'); //or load on the fly!
-        $this->viewBuilder()->layout('ajax');
+        $this->viewBuilder()->setLayout('ajax');
         $this->Captcha->create();
     }
 }
